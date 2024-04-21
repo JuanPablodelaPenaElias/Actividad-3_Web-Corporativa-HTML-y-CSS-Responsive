@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitud</title>
+    <style>
+        /* Estilos CSS para el formulario */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f3ff; /* Fondo azul claro */
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="file"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required>
+
+        <label for="foto_dni">Foto DNI:</label>
+        <input type="file" id="foto_dni" name="foto_dni" accept="image/*" required>
+
+        <label for="nacido_en">Nacido en:</label>
+        <input type="text" id="nacido_en" name="nacido_en" required>
+
+        <label for="provincia">Provincia:</label>
+        <select id="provincia" name="provincia" required>
+            <option value="">Seleccione...</option>
+            <option value="provincia1">Provincia 1</option>
+            <option value="provincia2">Provincia 2</option>
+            <!-- Agrega más opciones de provincias según sea necesario -->
+        </select>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono">
+
+        <label for="movil">Teléfono Móvil:</label>
+        <input type="text" id="movil" name="movil">
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" id="domicilio" name="domicilio">
+
+        <label for="codigo_postal">Código Postal:</label>
+        <input type="text" id="codigo_postal" name="codigo_postal">
+
+        <label for="localidad">Localidad:</label>
+        <input type="text" id="localidad" name="localidad">
+
+        <label for="requisitos">Requisitos de Acceso:</label>
+        <select id="requisitos" name="requisitos">
+            <option value="directo">Directo</option>
+            <option value="bachilleracto">Bachilleracto</option>
+            <option value="bachilleracto_experimental">Bachilleracto Experimental</option>
+            <option value="cou">COU</option>
+            <option value="fp2">FP2</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <label for="solicitud">Solicitud:</label>
+        <textarea id="solicitud" name="solicitud"></textarea>
+
+        <label for="lugar">Lugar:</label>
+        <input type="text" id="lugar" name="lugar">
+
+        <label for="localidad_solicitud">Localidad:</label>
+        <input type="text" id="localidad_solicitud" name="localidad_solicitud">
+
+        <label for="documentacion">Documentación Presentada:</label>
+        <input type="text" id="documentacion" name="documentacion">
+
+        <label for="firm">Firma (Día Hora Año):</label>
+        <input type="text" id="firm" name="firm">
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>

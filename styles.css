@@ -1,0 +1,25 @@
+/* Estilos para el contenedor principal */
+#contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilos para la sección a la derecha */
+#derecha {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Estilos para la barra lateral a la izquierda */
+#izquierda {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Estilos generales para el footer */
+footer {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}

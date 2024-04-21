@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        /* Estilos CSS para la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            margin-right: 50px;
+            margin-left: 500px;
+        }
+        header, nav, section, article, aside, footer {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            flex-basis: calc(150% - 20px); /* 50% width with margin */
+        }
+        footer {
+            flex-basis: 100%;
+        }
+        nav ul {
+            
+            margin-left: 10px;
+            margin-right: -1000px;
+            display: flex;
+            width: calc(10%-200px)
+        }
+        nav ul li {
+    margin-right: -10px; /* Reduce el margen derecho */
+    margin-left: 100px; /* Reduce el margen izquierdo */
+    max-width: 1000px; /* Limita la anchura máxima */
+    max-height: 20px; /* Mantén la altura máxima */
+    width: calc(10% - 20px); /* Ajusta el ancho */
+    margin-block-end: 20px;
+}
+
+        }
+        /* Estilos para la disposición en móviles */
+        @media (max-width: 768px) {
+            #contenedor {
+                flex-direction: column;
+            }
+            section, aside {
+                flex-basis: 100%;
+            }
+            
+        }
+        /* Estilos para el padding y margen de la sección */
+        section {
+            padding: 20px;
+            margin-left: 20px; 
+            margin-right: 900px;/* Ajusta este valor según lo que desees */
+        }
+        aside {
+            padding: 20px;
+            float: right;
+            width: (60% -20px) ;
+            margin-right: -auto;
+        }
+        aside {
+      padding: 80px;
+      /* Remove float property */
+      /* float: right; */
+      width: calc(40% - 20px);
+      margin-left: 3000px;
+      margin-top: -300px; /* Apply margin to the left */
+    margin-right: 40px;
+    }
+    /* Estilos generales */
+    body {
+        
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Estilos del menú */
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            overflow: hidden;
+        }
+        .menu li {
+            float: left;
+        }
+        .menu li a {
+            display: block;
+            padding: 16px;
+            text-decoration: none;
+            color: #000;
+        }
+        .menu li a:hover {
+            background-color: #ddd;
+        }
+        .voc-header__img {
+            margin-right: 10px; /* Espacio entre la imagen y los enlaces */
+        }
+        /* Estilos de las solapas */
+        .solapa {
+            display: none;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        /* Mostrar solapa cuando el enlace está activo */
+        .solapa:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header class="voc-header__container">
+            <div class="voc-header__pill-container--d">
+            </div>
+            <div class="voc-header__logo-container voc-header__logo-container--abc">
+            </a>
+            <div class="voc-header__logo">
+            <h1>
+            <span class="voc-header__text hidden"></span>
+            
+            <img src="Screenshot 2024-04-17 at 11-59-04 suits - Buscar con Google.png" class="voc-header__img voc-header__img--abc" alt=width="212" height="70">
+            
+            </div>
+            <div class="voc-header__home-img">
+            </a>
+            </div>
+            </div>
+            </div>
+            <nav class="voc-header__submenu">
+            <a class="voc-menu-icon" title="Menu icon">
+            <span class="voc-menu-icon__stripe"></span>
+            </a>
+            <nav class="voc-header__sections-menu">
+            <ul title="ABC">
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="Acerca.html">Acerca</a></li>
+
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://linkedin.com">LinkedIn</a></li>
+                    <li><a href="https://plus.google.com">Google+</a></li>
+                </ul>
+            
+                <div id="inicio" class="solapa">
+                </div>
+            
+                <div id="acerca" class="solapa">
+                    <h2>Acerca</h2>
+                    <p>Contenido de la página acerca...</p>
+                </div>
+            
+                
+
+              
+            
+            <li><a href="formulario.html">FORMULARIO</a></li>
+              
+            
+            </ul>
+            </header>
+        <section>
+            <header>
+                <h2>Sección</h2>
+            </header>
+            <article>
+                <h3>Artículo</h3>
+                <p>¡Bienvenido a mi página web! Este es un sitio donde puedes encontrar información interesante sobre diversos temas.</p>
+            </article>
+            <footer>
+                <p>Pie de la sección</p>
+            </footer>
+        </section>
+        <aside>
+            <a class="link" href="https://cdn.bmcdn5.com/go?ci=0cdf8fef-5e42-46d4-8b51-2408d057f535&amp;ai=64abcd3eebd0b9a88511be57&amp;sr=300675322304&amp;fid=ac470dbb06e568de87225172e4a54d9b" target="_blank"><iframe frameborder="0" scrolling="no" seamless="seamless" class="link-image" src="https://media.bmcdn5.com/html5/df923240-1f02-11ee-9ec5-b3819363eaebb12ef4d6-a53e-4bd0-9175-c3919722237063934351e4aad7514630936a/index.html" style="width:160px;height:600px;pointer-events:none;overflow:hidden"></iframe></a>
+            <h2>Barra lateral</h2>
+            <p>Contenido de la barra lateral.</p>
+        </aside>
+        <footer>
+            <p>&copy; 2024 Mi Página Web - Todos los derechos reservados</p>
+        </footer>
+    </div>
+</body>
+</html>
